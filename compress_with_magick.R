@@ -4,7 +4,8 @@ library(magick)
 
 setwd('~/Pictures/wwbrest/wwbrest/images/')
 dir.create('c')
-files <- list.files('f', pattern = "jpg|JPG")
+files <- list.files('f', pattern = "jpg|JPG|jpeg")
+
 i <- files[1]
 compression <- function(i){
   # image_read(i, density = NULL, depth = NULL, strip = FALSE) %>% 
