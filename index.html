@@ -148,6 +148,7 @@
         height: 100%;
     }
 
+
  .overlay {
   /* Display over the entire page */
   position: fixed;
@@ -172,10 +173,11 @@
 }
 
 .overlay img{
+  /*image-orientation: from-image;*/
   /* Maximum image size */
   max-width: 90%;
   max-height: 90%;
-    margin:auto;
+  margin:auto;
   /* We keep the ratio of the image */
   width: auto;
   height: auto;
@@ -193,6 +195,10 @@
     transform: scale(1);
 }
 
+.gallery div.narrow {
+        width: 187px;
+}
+
 }
 
 </style>
@@ -207,12 +213,14 @@
 
 
 
-<div ><a href="#img-id"><img src = "images/c/FullSizeRender.jpg.jpeg" loading="lazy"/></a>
+<div>
+  <a href="#img-id"><img src = "images/c/FullSizeRender.jpg.jpeg" loading="lazy"/></a>
 <a href="#_" class="overlay" id="img-id">
   <img src="images/FullSizeRender.jpg.jpeg" alt="Fullscreen" loading="lazy">
 </a>
 
 </div>
+
 <div ><a href="#img-id2"><img src = "images/c/IMG_2580.JPG" loading="lazy"/></a> <!-- class = "narrow" -->
 <a href="#_" class="overlay" id="img-id2">
   <img src="images/IMG_2580.JPG" alt="Fullscreen" loading="lazy">
@@ -225,7 +233,7 @@
 </a>
 </div>
 
-<div><a href="#img-id4"><img src = "images/c/IMG_2526.JPG" loading="lazy"/></a>
+<div class = "narrow"><a href="#img-id4"><img src = "images/c/IMG_2526.JPG" loading="lazy"/></a>
 <a href="#_" class="overlay" id="img-id4">
   <img src="images/IMG_2526.JPG" alt="Fullscreen" loading="lazy">
 </a>
